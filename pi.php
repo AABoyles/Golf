@@ -1,0 +1,1 @@
+<? function a($n){return($n==0||$n==1)?1:bcmul($n,a($n-1));}$m=0;$k=0;bcscale(1003);$l=71;while($k<$l){$m=bcadd($m,bcdiv(bcmul(bcadd('13591409',bcmul('545140134',$k)),bcmul(bcpow(-1,$k),a(6*$k))),bcmul(bcmul(bcpow('640320',3*$k+1),bcsqrt('640320')),bcmul(a(3*$k),bcpow(a($k),3)))));++$k;}echo bcdiv(1,bcmul(12,$m),1000);

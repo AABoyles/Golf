@@ -1,0 +1,2 @@
+<?php
+$a=fgets(STDIN);$l='"#    "';$r='"    #"';$b='"#   #"';$f='" ### "';$n='"     "';$c=json_decode("[[$f,$b,$n,$b,$f],[$n,$r,$n,$r,$n],[$f,$r,$f,$l,$f],[$f,$r,$f,$r,$f],[$n,$b,$f,$r,$n],[$f,$l,$f,$r,$f],[$f,$l,$f,$b,$f],[$f,$r,$n,$r,$n],[$f,$b,$f,$b,$f],[$f,$b,$f,$r,$f]]");$d=array(0,1,1,1,2,3,3,3,4);for($i=0;$i<9;$i++){for($j=0;$j<strlen($a)-1;$j++){echo$c[substr($a,$j,1)][$d[$i]],$j!=strlen($a)-2?"  ":'';}echo"\n";}
